@@ -22,18 +22,18 @@ Este repositorio contiene un ejemplo simple de cómo crear un servidor web en Go
     ```bash
     cd firstback
     ```
-4.Para generar una configuracion de air y poder ejecutar el live reload:
+4. Para generar una configuracion de air y poder ejecutar el live reload:
  ```bash
     air init
     ```
 
-3. Ejecuta el programa:
+5. Ejecuta el programa:
 
     ```bash
     air
     ```
 
-4. Abre tu navegador web y visita http://localhost:8000 para ver la aplicación en funcionamiento.
+6. Abre tu navegador web y visita http://localhost:8000 para ver la aplicación en funcionamiento.
 
 ## En caso de usar docker
 
