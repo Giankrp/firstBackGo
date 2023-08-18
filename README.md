@@ -6,6 +6,7 @@ Este repositorio contiene un ejemplo simple de cómo crear un servidor web en Go
 
 - Go (debe estar instalado en su sistema, consulte https://golang.org/doc/install)
 - Git (opcional, pero recomendado para clonar este repositorio)
+- postgreSQL o dokcer ya que se usa una base de datos para guardar los usuarios y las tareas relacionadas a ellos
 
 ## Cómo Ejecutar
 
@@ -29,11 +30,27 @@ Este repositorio contiene un ejemplo simple de cómo crear un servidor web en Go
 
 4. Abre tu navegador web y visita http://localhost:8000 para ver la aplicación en funcionamiento.
 
+## En caso de usar docker
+
+- En caso de usar docker ejecutar el siguiente comando:
+  ```bash
+    docker run --name some-postgres -e POSTGRES_USER=gian -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres
+   ```
+- Para hacer las consultas ejecutar el siguiente comando:
+  ```bash
+    docker exec -it some-postgres bash
+   ```
+
 ## Detalles del Proyecto
 
 - `main.go`: Este es el archivo principal que contiene la lógica para configurar y ejecutar el servidor web utilizando Gorilla Mux.
 
-- `routes.go`: En este archivo se definen las rutas y se configuran los manejadores correspondientes utilizando Gorilla Mux.
+- `routes`: En esta carpeta se definen las rutas y se configuran los manejadores correspondientes utilizando Gorilla Mux.
+
+- `db`: Aqui se define la conexion de la base de datos (postgreSQL)
+
+- `models`: En esta carpte se definen los modelos de las tablas "tasks" y "users"
+
 
 ## Contribuciones
 
@@ -43,6 +60,8 @@ Este repositorio contiene un ejemplo simple de cómo crear un servidor web en Go
 
 - Documentación de Gorilla Mux: https://github.com/gorilla/mux && https://gorilla.github.io/
 
--Documentación de ari (live Reload utilizado): https://github.com/cosmtrek/air
+- Documentación de ari (live Reload utilizado): https://github.com/cosmtrek/air
 
 - Documentación de Go: https://golang.org/doc/
+
+- Documentación del contenedor de postgreSQL: https://hub.docker.com/_/postgres
