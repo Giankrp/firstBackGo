@@ -25,7 +25,7 @@ Este repositorio contiene un ejemplo simple de cómo crear un servidor web en Go
 4. Para generar una configuracion de air y poder ejecutar el live reload:
 
     ```bash
-    air
+    air init
     ```
 
 
