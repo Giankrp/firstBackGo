@@ -7,6 +7,7 @@ Este repositorio contiene un ejemplo simple de cómo crear un servidor web en Go
 - Go (debe estar instalado en su sistema, consulte https://golang.org/doc/install)
 - Git (opcional, pero recomendado para clonar este repositorio)
 - postgreSQL o dokcer ya que se usa una base de datos para guardar los usuarios y las tareas relacionadas a ellos
+- Air (un live reload de go), ve a https://github.com/cosmtrek/air para saber sobre la instalacion
 
 ## Cómo Ejecutar
 
@@ -20,6 +21,10 @@ Este repositorio contiene un ejemplo simple de cómo crear un servidor web en Go
 
     ```bash
     cd firstback
+    ```
+4.Para generar una configuracion de air y poder ejecutar el live reload:
+ ```bash
+    air init
     ```
 
 3. Ejecuta el programa:
