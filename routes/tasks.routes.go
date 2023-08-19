@@ -12,7 +12,7 @@ import (
 func GetTasksHandler(w http.ResponseWriter, r *http.Request) {
 	var tasks []models.Task
 	db.DB.Find(&tasks)
-	json.NewEncoder(w).Encode(tasks)
+	json.NewEncoder(w).Encode(&tasks)
 }
 
 func GetTaskHandler(w http.ResponseWriter, r *http.Request) {
