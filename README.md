@@ -14,7 +14,7 @@ Este repositorio contiene un ejemplo simple de cómo crear un servidor web en Go
 1. Clona este repositorio en tu máquina local (si no tienes Git, puedes descargar el código fuente en formato ZIP):
 
     ```bash
-    git clone https://github.com/Giankrp/ejemplo-gorilla-mux.git
+    git clone https://github.com/Giankrp/firstBackGo.git 
     ```
 
 2. Cambia al directorio del proyecto:
